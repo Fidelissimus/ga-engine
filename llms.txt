@@ -1,0 +1,25 @@
+# ga-engine
+
+> A modular, dependency-light (NumPy only) genetic algorithm library for Python. It optimises real, integer, binary and permutation problems, supports constraints, multi-objective optimisation (NSGA-II), parallel evaluation, an island model, and exactly-resumable checkpoints. All objectives are minimised.
+
+Start with the LLM guide: it is self-contained and lists every parameter, template and common mistake.
+
+## Primary
+
+- [LLM guide](LLM_GUIDE.md): complete contract for writing correct code with this library, with runnable templates.
+
+## Documentation
+
+- [README](README.md): overview, installation, quick start, examples.
+- [User guide](docs/user-guide.md): tutorial for every capability.
+- [Configuration reference](docs/configuration.md): every option with defaults and validation rules.
+- [Operators](docs/operators.md): which operators exist for which genome, with parameters.
+- [Checkpoints](docs/checkpoints.md): guarantees and file format.
+- [Architecture](docs/architecture.md): modules, layers and data flow.
+- [API reference](docs/api.md): generated from the source.
+- [Troubleshooting](docs/troubleshooting.md): error messages and fixes.
+
+## Optional
+
+- [Examples](examples/real_sphere.py): runnable programs in the examples directory.
+- [Changelog](CHANGELOG.md)

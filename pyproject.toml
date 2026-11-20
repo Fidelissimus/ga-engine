@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ga-engine"
+dynamic = ["version"]
+description = "A modular genetic algorithm toolkit: real, binary and permutation genomes, NSGA-II, island model and atomic checkpoints."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.22"]
+keywords = ["genetic algorithm", "evolutionary computation", "optimization", "nsga-ii", "island model"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    "Typing :: Typed",
+]
+
+[tool.setuptools.dynamic]
+version = { attr = "ga_engine._version.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["ga_engine*"]
+
+[tool.setuptools.package-data]
+ga_engine = ["py.typed"]
+
+[tool.mypy]
+python_version = "3.10"
+files = ["ga_engine"]
+strict = true
